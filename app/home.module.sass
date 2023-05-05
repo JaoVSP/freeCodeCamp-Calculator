@@ -1,0 +1,99 @@
+.calculator 
+  background: #1B1B1B
+  display: grid
+  grid-template-columns: repeat(6, 2.8rem)
+  grid-template-rows: repeat(9, 2.8rem)
+  width: 17rem
+  height: 25rem
+  margin: 5% auto auto auto
+  border-radius: 8px
+
+.display 
+  background: #1A1A1A
+  width: 14rem
+  height: 4rem
+  border-radius: 2px
+  margin-left: 1.3rem
+  margin-top: 1rem
+  font-size: 30px
+  color: #FFFFFF
+  text-align: right
+  overflow-wrap: break-word
+
+
+.button
+  border-radius: 40%
+  width: 2.8rem
+  height: 2.8rem
+  border: none
+  font-size: 22px
+
+  &:hover 
+    opacity: 0.8
+    transition: opacity 0.2s
+
+
+.operatorsButton
+  @extend .button
+  background: #525050
+  color: #FFFFFF
+
+.clearAllButton
+  background: #E26765
+  color: #000000
+  border-radius: 10px
+  width: 6.5rem
+  height: 2.6rem
+  border: none
+  font-size: 22px
+  &:hover 
+    opacity: 0.8
+    transition: opacity 0.2s
+
+
+.clearButton 
+  @extend .clearAllButton
+  width: 3.7rem
+  height: 2.6rem 
+
+.numbersButton
+  @extend .button
+  background: #7D8599
+  color: #FFFFFF
+
+.operators
+  display: grid
+  grid-template-columns: repeat(1, 2.8rem)
+  grid-template-rows: repeat(6, 3.5rem)
+  grid-column-start: 6
+  grid-column-end: 6
+  grid-row-start: 3
+  grid-row-end: 8
+  margin-right: 1.2rem
+  justify-content: end
+
+
+
+.numbers
+  display: grid
+  grid-template-columns: repeat(3, 4rem)
+  grid-template-rows: repeat(3, 3.7rem)
+  grid-column-start: 1
+  grid-column-end: 2
+  grid-row-start: 4
+  grid-row-end: 8
+  margin-left: 1.2rem
+  align-items: center
+
+ 
+.clear
+  display: grid
+  grid-template-columns: repeat(2, 7.3rem)
+  grid-template-rows: repeat(1, 3rem)
+  grid-column-start: 1
+  grid-column-end: 4
+  grid-row-start: 3
+  grid-row-end: 3
+  margin-left: 1.4rem
+
+
