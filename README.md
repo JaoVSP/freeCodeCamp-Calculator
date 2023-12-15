@@ -8,9 +8,3 @@
 # 📚 libraries:
 
 - [sass](https://sass-lang.com/)
-
-# Installing:
-
-```
-git clone git@github.com:Jao420/freeCodeCamp-Calculator.git
-```
